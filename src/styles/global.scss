@@ -16,8 +16,12 @@
   color: rgb(102, 102, 102);
   font-family: 'Montserrat', sans-serif;
   h1 {
-    font-size: 120px;
+    font-size: 60px;
     font-weight: 200;
+    text-align: center;
+    @media only screen and (min-width: 700px) {
+      font-size: 120px;
+    }
   }
   p {
     font-size: 12px;
