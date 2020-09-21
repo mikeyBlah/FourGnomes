@@ -12,8 +12,8 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: #f3dcb9;
-  color: rgb(102, 102, 102);
+  background: #000B38;
+  color: #21FFE2;
   font-family: 'Montserrat', sans-serif;
   h1 {
     font-size: 60px;
@@ -30,4 +30,8 @@
     font-weight: 200;
     margin-top: 40px;
   }
+}
+.gutters {
+  padding-left: 10%;
+  padding-right: 10%;
 }
