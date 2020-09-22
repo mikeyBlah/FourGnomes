@@ -18,6 +18,12 @@ const Menu = () => {
         <span></span>
         <span></span>
       </div>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
     </div>
   )
 }
