@@ -37,6 +37,11 @@
     left: -740px;
     height: calc(100vh + 500px);
     width: 800px;
+    ul {
+      li {
+        font-size: 1.8rem;
+      }
+    }
     &.active {
       left: -240px;
       transform: rotate(25deg);

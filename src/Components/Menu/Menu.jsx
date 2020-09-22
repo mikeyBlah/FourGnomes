@@ -6,7 +6,6 @@ const Menu = () => {
   const [isActive, changeIsActive] = useState(false);
 
   const handleMenuClick = () => {
-    console.log('###: Click handle');
     const isActiveNew = !isActive;
     changeIsActive(isActiveNew);
   } 
