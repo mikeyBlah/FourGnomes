@@ -14,7 +14,7 @@ const GlobalHeader = () => {
   return (
     <>
       <header className={`${styles.headerContainer} gutters`}>
-        <div></div>
+        <div className={styles.holder}></div>
         <h1 className={styles.logoContainer}>FOUR GNOMES</h1>
         <div className={styles.modeToggleContainer} onClick={toggleMode}>
           <span className={`${isDarkMode && styles.darkMode}`}></span>
