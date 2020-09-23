@@ -23,8 +23,27 @@
     font-size: 1.4rem;
     transition: all .3s ease-in-out;
     li {
+      position: relative;
       padding: 1rem 0;
       list-style: none;
+      text-align: center;
+      cursor: pointer;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 0;
+        border-radius: 5px;
+        background: $primaryColor;
+        transition: all .3s ease-in-out;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
     }
   }
   @media only screen and (min-width: 768px) {
