@@ -10,6 +10,7 @@
   height: 100vh;
   width: 60%;
   transition: all .3s ease-in-out;
+  z-index: 1;
   &.active {
     background: $secondaryColor;
     left: 0;

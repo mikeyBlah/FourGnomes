@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import styles from './menu.module.scss';
 
-const Menu = () => {
+const Menu = (props) => {
   
   const [isActive, changeIsActive] = useState(false);
+  const {click} = props;
 
   const handleMenuClick = () => {
     const isActiveNew = !isActive;
@@ -18,10 +19,11 @@ const Menu = () => {
         <span></span>
       </div>
       <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-        <li>Item Four</li>
+        <li onClick={() => click(0)}>Home</li>
+        <li onClick={() => click(1)}>Item One</li>
+        <li onClick={() => click(2)}>Item Two</li>
+        <li onClick={() => click(3)}>Item Three</li>
+        <li onClick={() => click(4)}>Item Four</li>
       </ul>
     </div>
   )

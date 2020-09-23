@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Menu from '../Menu/Menu';
 import styles from './globalHeader.module.scss'
 
-const GlobalHeader = () => {
+const GlobalHeader = (props) => {
 
   const [isDarkMode, changeIsDarkMode] = useState(false);
+  const {click} = props;
 
   const toggleMode = () => {
     const newMode = !isDarkMode;
@@ -20,7 +21,9 @@ const GlobalHeader = () => {
           <span className={`${isDarkMode && styles.darkMode}`}></span>
         </div>
       </header>
-      <Menu />
+      <Menu
+        click={click}
+      />
     </>
   )
 }
